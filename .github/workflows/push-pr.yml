@@ -15,10 +15,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v7.0.1
-        with:
-            sparse-checkout: src
 
       - name: Run tests
         run: npm test
-        
-    
+        working-directory: ./src  
