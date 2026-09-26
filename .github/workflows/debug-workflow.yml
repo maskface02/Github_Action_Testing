@@ -1,4 +1,4 @@
-- name: Debug npm directory
+name: Debug npm directory
   working-directory: ./src
   run: |
     pwd
