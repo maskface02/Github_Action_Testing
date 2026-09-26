@@ -19,5 +19,8 @@ jobs:
         uses: actions/checkout@v7.0.1
 
       - name: Run tests
-        run: npm test
+        run: |
+          pwd
+          cat package.json
+          npm test
         working-directory: ./src  
