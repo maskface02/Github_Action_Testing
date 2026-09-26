@@ -1,0 +1,12 @@
+- name: Debug npm directory
+  working-directory: ./src
+  run: |
+    pwd
+    ls -la
+    npm prefix
+    npm pkg get name
+    cat package.json
+
+- name: Run tests
+  working-directory: ./src
+  run: npm test
