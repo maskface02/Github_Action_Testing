@@ -1,0 +1,8 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  runs-on: ubunto-slim
+  steps:
+    - name: Deploy App
+      run: echo "Deploying the app..."
