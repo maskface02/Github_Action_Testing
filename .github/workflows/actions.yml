@@ -9,7 +9,7 @@ jobs:
         run: echo "This step runs on Ubuntu VM"
 
       - name: Run a cmd inside an Alpine container
-        uses: docker://alpine:3:24
+        uses: docker://alpine:3.24
         with:
           entrypoint: /bin/sh
           args: -c "echo 'This step runs inside docker Alpine container'"
