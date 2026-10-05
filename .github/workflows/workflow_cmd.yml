@@ -5,8 +5,13 @@ jobs:
   example:
     runs-on: ubuntu-latest
     steps:
-    - run: |
-        dep=true
-        if $dep ; then 
-        echo "::warning::Deprecated function found"
-        fi
+    # - run: |
+    #     dep=true
+    #     if $dep ; then 
+    #     echo "::warning::Deprecated function found"
+    #     fi
+    - name: Set API key
+      run: echo "API_KEY=12345" >> $GITHUB_ENV
+      
+    - name: Use API key
+      run: echo "Using API key $API_KEY"
