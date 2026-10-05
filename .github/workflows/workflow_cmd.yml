@@ -23,4 +23,8 @@ jobs:
         else
           echo "::error::config.yml is missing"
         fi
-      
+
+    - name: Use API key
+      run: |
+          echo "::add-mask::$API_KEY"
+          echo "Using API key $API_KEY"
