@@ -7,6 +7,6 @@ jobs:
     steps:
     - run: |
         dep=true
-        if [[dep]] ; then 
+        if $dep ; then 
         echo "::warning::Deprecated function found"
         fi
